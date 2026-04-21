@@ -1,0 +1,7 @@
+root:
+  - key3: base_value3
+    key4: base_value4
+  - 
+  - Scalar_Value
+  - - key5: base_value5
+    - key6: base_value6

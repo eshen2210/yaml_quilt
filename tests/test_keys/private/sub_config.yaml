@@ -1,0 +1,4 @@
+data1: sub_value1
+(patch): test_keys/patches/private_config.yaml
+data5: sub_value5
+(private) data6: sub_value6

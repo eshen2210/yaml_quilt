@@ -1,0 +1,16 @@
+root:
+  - key1: sub_value1
+    key2: sub_value2
+    key3: base_value3
+    key4: base_value4
+  - data1: sub_value1
+    data5: sub_value5
+    data2: 
+      key3: baseValue3
+      key4: baseValue4
+    data4:
+      - key9: baseValue9
+      - key10: baseValue10
+  - Scalar_Value
+  - - key5: base_value5
+    - key6: base_value6

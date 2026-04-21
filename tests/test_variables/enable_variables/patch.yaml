@@ -1,0 +1,27 @@
+root:
+  enabled_list:
+    - (enable): <enable_list>
+    - item1
+    - item2
+  disabled_list:
+    - (enable): <missing_or_false>
+    - itemA
+    - itemB
+  enabled_dict:
+    (enable): <enable_dict>
+    key1: value1
+    key2: value2
+  disabled_dict:
+    (enable): <not_enabled>
+    keyA: valueA
+    keyB: valueB
+  list_of_dicts:
+    - (enable): <enable_list>
+      enabled_key1: value1
+      enabled_key2: value2
+    - (enable): <missing_or_false>
+      disabled_keyA: valueA
+      disabled_keyB: valueB
+    - - (enable): <enable_list>
+      - item1
+      - item2

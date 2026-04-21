@@ -1,0 +1,7 @@
+name: <name>
+address: <address>
+data_type: <data_type>
+(variables):
+  (abstract) <name>:
+  (abstract) <address>:
+  (abstract) <data_type>:

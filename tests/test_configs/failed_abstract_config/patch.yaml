@@ -1,0 +1,10 @@
+(abstract_file): value_not_used
+io:
+  sequence:
+  read:
+    - tag1: 
+    - tag2: 
+  write:
+    - tag1: 
+    - tag2: 
+  not_inherited: 

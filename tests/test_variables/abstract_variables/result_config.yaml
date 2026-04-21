@@ -1,0 +1,7 @@
+signals:
+- name: signal1
+  address: address1
+  data_type: data_type1
+- name: signal2
+  address: address2
+  data_type: data_type2

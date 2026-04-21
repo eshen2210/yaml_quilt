@@ -1,0 +1,7 @@
+inner1:
+  inner2:
+    inner3:
+      item1: value1
+      item2: value2
+  (abstract) inner2_2:
+  (sealed) inner2_3: value2_3

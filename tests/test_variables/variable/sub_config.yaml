@@ -1,0 +1,39 @@
+(variables):
+  <variable_value> : replaced_value
+  <variable_dict>:
+    replaced_key1: replaced_value1
+    replaced_key2:
+      - replaced_item1
+      - replaced_item_key1: replaced_item_value_1
+  <variable_list>:
+    - replaced_item1
+    - replaced_item_dict: 
+      - replaced_item_value_1
+      - replaced_item_value_2
+  <123>: 456
+  <item>: replaced_item
+  <var>: replaced_variable
+###
+root:
+  key1: <variable_value>
+  key2:
+    - key2_1: value2_1
+    - key2_2: <variable_list>
+    - key2_3:
+        (optional) key2_3_1: <123>
+        (optional) key2_3_2: <456>
+        key2_3_3:
+          - (optional) <123>
+          - (optional) <456> 
+  key3:
+    key3_1:
+      key3_1_1:
+        key3_1_1_1: <variable_dict>
+        key3_1_1_2: <var>
+      key3_1_2:
+        - <item>
+        - partial_replacement_<item>
+      key3_1_3:
+        - <item>
+        - <var>-multiple-<item>
+        - item_key: <item>

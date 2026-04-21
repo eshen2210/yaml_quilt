@@ -1,0 +1,45 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: test-config
+  labels:
+    app: test
+spec:
+  replicas: 2
+  strategy:
+    type: RollingUpdate
+  selector:
+    matchLabels:
+      name: test
+  template:
+    metadata:
+      labels:
+        name: test
+  containers:
+    - name: test-container
+      image: test-container:1.0
+      ports:
+      - containerPort: 8080
+      command: ["launch.py"]
+      envFrom:
+      - configMapRef:
+        name: default_env
+      resources:
+        requests:
+          requests:
+            cpu: 200m
+            memory: 200Mi
+    - name: test-service
+      image: test-service:1.0
+      ports:
+      - containerPort: 30000
+      command: ["service.py"]
+      envFrom:
+      - configMapRef:
+        name: default_env
+      resources:
+        requests:
+          requests:
+            cpu: 200m
+            memory: 200Mi
+

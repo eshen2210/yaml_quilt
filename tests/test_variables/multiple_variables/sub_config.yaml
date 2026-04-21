@@ -1,0 +1,24 @@
+(variables):
+  <tag_name>: tag_name
+  <tag_count>: 4
+  <tag1>: tag1
+  <tag2>: tag2
+  <read_write>: read_write
+###
+connection:
+  type: OPC UA
+  address: sub.example.com
+io:
+  information:
+    tag_count: <tag_count>
+  sequence:
+    - <tag_name>4
+    - <tag_name>3
+    - <tag2>
+    - <tag1>
+  read:
+    tag3: <tag_name>3_<read_write>
+    tag4: <tag_name>4_<read_write>
+  write:
+    tag3: <tag_name>3_<read_write>
+    tag4: <tag_name>4_<read_write>

@@ -1,0 +1,7 @@
+(patch): 
+  (path): test_variables/nested_instantiation/patch_level2.yaml
+  (variables):
+    (carryover) (override) (abstract) var1: should_be_overriden
+    (override) var2: base_value_level1
+    (carryover) (override) var3: should_not_appear
+    not_used_var: should_not_appear

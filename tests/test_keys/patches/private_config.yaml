@@ -1,0 +1,14 @@
+(private) data1: 
+  key1: baseValue1
+  key2: baseValue2
+data2: 
+  key3: baseValue3
+  key4: baseValue4
+(private) data3:
+  - key5: baseValue5
+    key6: baseValue6
+  - key7: baseValue7
+    key8: baseValue8
+data4:
+  - key9: baseValue9
+  - key10: baseValue10

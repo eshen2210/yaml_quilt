@@ -1,0 +1,5 @@
+(patch): test_keys/empty_list/patch.yaml
+(append) key1:
+(prepend) key2:
+  - scalar2
+  - key2: scalar2

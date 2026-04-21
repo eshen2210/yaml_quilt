@@ -1,0 +1,26 @@
+root:
+  node1:
+    sub_node1_1:
+      base_item1_1_1: value1_1_1
+      base_item1_1_2: value1_1_2
+      base_item1_1_3: value1_1_3
+  node2:
+    sub_node2_1:
+      base_item2_1_1: value2_1_1
+      base_item2_1_2: value2_1_2
+    sub_node2_2:
+      - base_item2_2_1: value2_2_1
+      - base_item2_2_2: value2_2_2
+  node3:
+    sub_node3_1:
+      - base_item3_1_1: value3_1_1
+      - base_item3_1_2: value3_1_2
+    sub_node3_2:
+      - base_item3_2_1: value3_2_1
+  node_not_inherited:
+    sub_node_not_inherited: value_not_inherited
+  also_not_inherited:
+    - item_not_inherited: value_not_inherited
+    - item_not_inherited: value_not_inherited
+(sealed) root3:
+  - value_inherited

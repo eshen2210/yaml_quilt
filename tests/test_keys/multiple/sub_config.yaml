@@ -1,0 +1,13 @@
+set1:
+  (patch): test_keys/patches/dict_config.yaml # Inherit dict with partial overlapping keys
+  data1:
+    (override) key1: subValue1  # Override's base config key1
+    key3: subValue3  
+set2:
+  (patch): test_keys/patches/list_config.yaml # Inherit list
+set3:
+  (patch): # Inherit multiple base configs and combine keys. Later configs in the list override earlier ones.
+    - test_keys/patches/dict_config.yaml
+    - test_keys/patches/simple_config.yaml
+  key3:
+    (patch): test_keys/patches/simple_config.yaml

@@ -1,0 +1,7 @@
+(variables):
+  (abstract) var1:
+  (abstract) var2:
+
+root:
+  key1: var1
+  key2: var2

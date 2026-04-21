@@ -1,0 +1,11 @@
+(abstract_file): value_not_used
+io:
+  sequence:
+    - tag1
+    - tag2
+  (sealed) read: # Cannot seal an inner node of an abstract node
+    - tag1: tag1_read
+    - tag2: tag2_read
+  write:
+    - tag1: tag1_write
+    - tag2: tag2_write

@@ -1,0 +1,5 @@
+(patch):
+  (path): test_variables/global_injection_abstract_carryover/patch_level2.yaml
+  (variables):
+    (abstract) (carryover) var1:
+    (abstract) (carryover) var2:

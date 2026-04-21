@@ -1,0 +1,15 @@
+(variables):
+  <a>: alpha
+  <a>1: alpha1
+  <a1x>: alpha1x
+  <b>: beta
+  <b1>: beta1
+
+data:
+  simple: <a>1
+  nested:
+    value: prefix-<a1>-suffix
+  list:
+    - <a1x>
+    - mix-<b1>-<b>-end
+    - ok-<a>-<b>

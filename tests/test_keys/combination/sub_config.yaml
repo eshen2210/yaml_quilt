@@ -1,0 +1,7 @@
+(patch): test_keys/combination/patch_level1.yaml
+(sealed_file):
+set1:
+  key1: subValue1
+  key2: subValue2
+  key3: subValue3
+  (override) key7: subValue7

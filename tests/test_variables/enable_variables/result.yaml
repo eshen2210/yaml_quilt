@@ -1,0 +1,12 @@
+root:
+  enabled_list:
+    - item1
+    - item2
+  enabled_dict:
+    key1: value1
+    key2: value2
+  list_of_dicts:
+    - enabled_key1: value1
+      enabled_key2: value2
+    - - item1
+      - item2

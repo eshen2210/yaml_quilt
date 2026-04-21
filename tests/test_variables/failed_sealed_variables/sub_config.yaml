@@ -1,0 +1,35 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: test-config
+  labels:
+    app: test
+spec:
+  replicas: 2
+  strategy:
+    type: RollingUpdate
+  selector:
+    matchLabels:
+      name: test
+  template:
+    metadata:
+      labels:
+        name: test
+  containers:
+    - (patch):
+        (path): test_variables/failed_sealed_variables/container_config.yaml
+        (variables):
+          <name>: test-container
+          <image>: test-container:1.0
+          <port>: 8080
+          <command>: ["launch.py"]
+          (override) <cpu>: 500m
+    - (patch):
+        (path): test_variables/failed_sealed_variables/container_config.yaml
+        (variables):
+          <name>: test-service
+          <image>: test-service:1.0
+          <port>: 30000
+          <command>: ["service.py"]
+          (override) <cpu>: 500m
+

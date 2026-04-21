@@ -1,0 +1,8 @@
+(patch): 
+  (path): test_variables/nested_instantiation/patch_level1.yaml
+  (variables):
+    (override) var1: sub_value1
+    (override) var2: sub_value2
+    (override) var3: sub_value3
+sub_root:
+  key3: var3

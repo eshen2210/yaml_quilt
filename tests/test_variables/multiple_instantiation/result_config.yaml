@@ -1,0 +1,16 @@
+name: test-service
+image: test-service:1.0
+ports:
+- containerPort: 30000
+command: ["service.py"]
+envFrom:
+- configMapRef:
+  name: default_env
+resources:
+  requests:
+    requests:
+      cpu: 200m
+      memory: 200Mi
+key1: value1
+key2: value2
+key3: value3 + value4

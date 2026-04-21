@@ -1,0 +1,18 @@
+(sealed) connection:
+  type: TCP/IP
+  (optional) address: sub.example.com
+(variables): # No variables
+io:
+  (private) information:
+    (override) tag_count: 4
+  (private) (optional) sequence:
+    - tag4
+    - tag3
+    - tag2
+    - tag1
+  (private) read:
+    - tag3: tag3_read
+    - tag4: tag4_read
+  (sealed) (optional) write:
+    - tag3: tag3_write
+    - tag4: tag4_write

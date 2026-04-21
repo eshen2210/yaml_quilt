@@ -1,0 +1,22 @@
+io:
+  (abstract) sequence:
+    - tag1
+    - tag2
+  (abstract) read:
+    - tag1: tag1_read
+    - tag2: tag2_read
+  (abstract) write:
+    - tag1: tag1_write
+    - tag2: tag2_write
+  (sealed) publication:
+    - tag10: tag_10_pub
+    - tag11: tag_11_pub
+  (sealed) subscription:
+    tag12: tag_12_sub
+    tag13: tag_13_sub
+  (sealed) (override) monitor:
+    - tag14
+  (sealed) (override) receive:
+    tag15: tag_15_receive
+  (private) metadata:
+    name: base

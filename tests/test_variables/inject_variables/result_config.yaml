@@ -1,0 +1,14 @@
+root:
+  key1: injected_value
+  key2: 
+    subkey1 : sub_value1
+    subkey2 : sub_value2
+  list:
+    - key3:
+        - 1
+        - 2
+        - 3
+        - 4
+        - 5
+    - key4:
+        subkey3: sub_value3

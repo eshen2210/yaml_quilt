@@ -1,0 +1,18 @@
+(variables):
+  <val1>: replaced_val1
+  <val4>: replaced_val4
+
+(patch):
+  (path): test_variables/default_variables/patch.yaml
+  (variables):
+    (optional) (carryover) <injected_base_val3>:
+    (optional) (carryover) <not_injected>:
+
+root:
+  (default) key1: <val1> | default_val1
+  (default) key2: <val2> | 2
+  (default) key3: <injected_val3> | default_val3
+  key4:
+    - (default) <val4> | default_val4
+    - (default) <val5> | 5
+    - (default) <injected_val6> | default_val6

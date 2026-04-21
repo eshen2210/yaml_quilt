@@ -1,0 +1,17 @@
+(variables):
+  (sealed) <cpu>: 200m
+  (sealed) <memory>: 200Mi
+name: <name>
+image: <image>
+ports:
+- containerPort: <port>
+command: <command>
+envFrom:
+- configMapRef:
+  name: default_env
+resources:
+  requests:
+    requests:
+      cpu: <cpu>
+      memory: <memory>
+  

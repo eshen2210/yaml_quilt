@@ -1,0 +1,15 @@
+connection:
+  type: TCP/IP
+io:
+  information:
+    tag_count: 4
+  sequence:
+    - tag4
+    - tag3
+    - tag2
+    - tag1
+  read:
+    - tag3: tag3_read
+    - tag4: tag4_read
+  write:
+    - tag4: tag4_write

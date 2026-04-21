@@ -1,0 +1,14 @@
+- item1:
+  - item1_1:
+    - item2_1:
+      - baseKey: baseValue
+    - item2_2:
+      - baseKey: baseValue
+- item 2:
+  - key2_1: value1
+    key2_2: value2
+  - key2_2: 
+      key3_1: 
+        baseKey: baseValue
+- item 3:
+  - baseKey: baseValue

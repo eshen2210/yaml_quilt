@@ -1,0 +1,7 @@
+io:
+  (abstract) read:
+    - tag1: tag1_read
+    - tag2: tag2_read
+  (abstract) write:
+    - tag1: tag1_write
+    - tag2: tag2_write

@@ -1,0 +1,9 @@
+(variables):
+  (global) var3: sub_value3
+(patch): 
+  (path): test_variables/nested_global_instantiation/patch_level1.yaml
+  (variables):
+    (override) (global) var1: sub_value1
+    (global) var2: sub_value2
+sub_root:
+  key3: var3

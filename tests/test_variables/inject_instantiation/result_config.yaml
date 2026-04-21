@@ -1,0 +1,22 @@
+base_key4:
+  key4: injected_value4
+root:
+  dict:
+    base_key1: <var1>
+    base_sequence1:
+      - <var1>
+    base_key2: value2
+    base_sequence2:
+      - value2
+  sequence:
+    - base_key1: value1
+      base_sequence1:
+        - value1
+    - base_key2: <var2>
+      base_sequence2:
+        - <var2>
+    - base_key3:
+        key3: injected_value3
+        base_key1: injected_value1
+        base_sequence1:
+          - injected_value1

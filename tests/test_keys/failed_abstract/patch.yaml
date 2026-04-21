@@ -1,0 +1,12 @@
+(abstract): value_not_used
+io:
+  sequence:
+    - tag1
+    - tag2
+  read:
+    - tag1: tag1_read
+    - tag2: tag2_read
+  write:
+    - tag1: tag1_write
+    - tag2: tag2_write
+  not_inherited: base_value

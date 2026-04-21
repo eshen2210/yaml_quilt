@@ -1,0 +1,9 @@
+set1:
+    key1: baseValueLevel2
+    key5: baseValueLevel2
+    (private) key6: baseValueLevel2
+    (abstract) key7: baseValueLevel2
+set2:
+    key1: baseValueLevel2
+    key2: baseValueLevel2
+    key3: baseValueLevel2

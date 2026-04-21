@@ -1,0 +1,3 @@
+(patch): test_special/patch_process_first/patch_level1.yaml
+(append) root:
+  - sub_item: sub

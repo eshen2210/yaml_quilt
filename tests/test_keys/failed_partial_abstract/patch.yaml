@@ -1,0 +1,13 @@
+io:
+  (abstract) information:
+    tag_count: # Tag count is overriden properly
+    tag_order: # Tag order is not implemented and will throw an error
+  (abstract) sequence:
+    - tag1
+    - tag2
+  (abstract) read:
+    - tag1: tag1_read
+    - tag2: tag2_read
+  (abstract) write:
+    - tag1: tag1_write
+    - tag2: tag2_write

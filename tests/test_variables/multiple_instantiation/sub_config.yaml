@@ -1,0 +1,13 @@
+(patch):
+  - (path): test_variables/multiple_instantiation/patch1.yaml
+    (variables):
+      <name>: test-service
+      <image>: test-service:1.0
+      <port>: 30000
+      <command>: ["service.py"]
+  - (path): test_variables/multiple_instantiation/patch2.yaml
+    (variables):
+      <variable1>: value1
+      variable2: value2
+      <variable3>: value3
+      <variable4>: value4

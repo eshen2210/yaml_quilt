@@ -1,0 +1,2 @@
+(patch): test_special/failed_circular_inheritance/sub_config.yaml
+base_key_level2: base_value_level2

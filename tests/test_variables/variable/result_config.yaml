@@ -1,0 +1,29 @@
+root:
+  key1: replaced_value
+  key2:
+    - key2_1: value2_1
+    - key2_2: 
+      - replaced_item1
+      - replaced_item_dict: 
+        - replaced_item_value_1
+        - replaced_item_value_2
+    - key2_3:
+        key2_3_1: 456
+        key2_3_3:
+          - 456
+  key3:
+    key3_1:
+      key3_1_1:
+        key3_1_1_1: 
+            replaced_key1: replaced_value1
+            replaced_key2:
+              - replaced_item1
+              - replaced_item_key1: replaced_item_value_1
+        key3_1_1_2: replaced_variable
+      key3_1_2:
+        - replaced_item
+        - partial_replacement_replaced_item
+      key3_1_3:
+        - replaced_item
+        - replaced_variable-multiple-replaced_item
+        - item_key: replaced_item

@@ -1,0 +1,5 @@
+root:
+  key1: sub_value1
+  key2: sub_value2
+sub_root:
+  key3: sub_value3

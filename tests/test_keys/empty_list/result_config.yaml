@@ -1,0 +1,6 @@
+key1:
+  - scalar1
+  - key1: scalar1
+key2:
+  - scalar2
+  - key2: scalar2

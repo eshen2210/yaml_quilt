@@ -1,0 +1,17 @@
+root:
+  (private) data1: 
+    key1: baseValue1
+    key2: baseValue2
+  (abstract) data2: 
+    key3: baseValue3
+    key4: baseValue4
+  (abstract) data3:
+    - key5: baseValue5
+      key6:
+        key6.1: baseValue6.1
+        (private) key6.2: baseValue6.2
+    - key7: baseValue7
+      key8: baseValue8
+  data4:
+    - key9: baseValue9
+    - key10: baseValue10

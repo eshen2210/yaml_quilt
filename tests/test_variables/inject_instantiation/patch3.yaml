@@ -1,0 +1,6 @@
+base_key3:
+  key3: <var3>
+  (patch):
+    (path): test_variables/inject_instantiation/patch1.yaml
+    (variables):
+      (carryover) <var1>:

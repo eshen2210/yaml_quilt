@@ -1,0 +1,12 @@
+root:
+  key1: replaced_val1
+  key2: 2
+  key3: injected_val3
+  key4:
+    - replaced_val4
+    - 5
+    - injected_val6
+  base_key1: replaced_val1
+  base_key2: 2
+  base_key3: injected_base_val3
+  base_key4: not_injected_base_val4

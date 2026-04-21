@@ -1,0 +1,2 @@
+(patch): test_configs/failed_nested_sealed_config/patch_level2.yaml
+key1: inherited

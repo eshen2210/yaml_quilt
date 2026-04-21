@@ -1,0 +1,13 @@
+signals:
+- (patch):
+    (path): test_variables/abstract_variables/patch.yaml
+    (variables):
+      <name>: signal1
+      <address>: address1
+      (override) <data_type>: data_type1
+- (patch):
+    (path): test_variables/abstract_variables/patch.yaml
+    (override) (variables):
+      <name>: signal2
+      <address>: address2
+      <data_type>: data_type2

@@ -1,0 +1,4 @@
+# Invalid YAML file
+badKey: badValue
+- badData1: badDataValue1
+- badData2: badDataValue2

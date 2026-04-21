@@ -1,0 +1,4 @@
+(patch): test_keys/failed_dict_to_list/patch.yaml
+root:
+  item1: value1
+  item2: value2

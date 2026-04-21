@@ -1,0 +1,8 @@
+(variables):
+    <base_val1>: replaced_val1
+
+root:
+    (default) base_key1: <base_val1> | base_val1
+    (default) base_key2: <base_val2> | 2
+    (default) base_key3: <injected_base_val3> | base_val3
+    (default) base_key4: <not_injected> | not_injected_base_val4

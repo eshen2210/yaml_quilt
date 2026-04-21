@@ -1,0 +1,17 @@
+connection:
+  type: OPC UA
+  address: sub.example.com
+io:
+  information:
+    tag_count: 4
+  sequence:
+    - tag_name4
+    - tag_name3
+    - tag2
+    - tag1
+  read:
+    tag3: tag_name3_read_write
+    tag4: tag_name4_read_write
+  write:
+    tag3: tag_name3_read_write
+    tag4: tag_name4_read_write

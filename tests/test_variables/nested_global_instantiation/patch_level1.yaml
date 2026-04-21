@@ -1,0 +1,5 @@
+(patch): 
+  (path): test_variables/nested_global_instantiation/patch_level2.yaml
+  (variables):
+    (override) (abstract) var1:
+    not_used_var: should_not_appear

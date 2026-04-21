@@ -1,0 +1,8 @@
+(patch): test_keys/nested/patch_level2.yaml
+set1:
+    key1: baseValueLevel1
+    key4: baseValueLevel1
+    (sealed) (override) key7: baseValueLevel1
+set2:
+    key1: baseValueLevel1
+    (override) key2: baseValueLevel1

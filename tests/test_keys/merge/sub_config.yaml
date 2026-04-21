@@ -1,0 +1,6 @@
+(patch): test_keys/merge/patch.yaml
+(merge) root:
+  - key1: sub_value1
+    key2: sub_value2
+  - (patch): test_keys/private/sub_config.yaml
+  -

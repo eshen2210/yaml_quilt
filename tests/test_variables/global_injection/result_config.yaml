@@ -1,0 +1,8 @@
+root:
+  key1: injected1
+  key2: injected2
+  list1:
+    - injected1
+  list2:
+    - injected2
+  combined_key: injected1-injected2

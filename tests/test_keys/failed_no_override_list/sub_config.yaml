@@ -1,0 +1,14 @@
+(patch): test_keys/patches/dict_config.yaml
+sub_data1: 
+  key1: baseValue1
+  key2: baseValue2
+sub_data2: 
+  key3: baseValue3
+  key4: baseValue4
+data3: # Triggers no override error
+  - key5: baseValue5
+    key6: baseValue6
+  - key7: baseValue7
+    key8: baseValue8
+  - key9: baseValue9
+    key10: baseValue10

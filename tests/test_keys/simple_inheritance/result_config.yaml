@@ -1,0 +1,22 @@
+connection:
+  type: TCP/IP
+  address: sub.example.com
+io:
+  information:
+    tag_count: 4
+  sequence:
+    - tag4
+    - tag3
+    - tag2
+    - tag1
+  read:
+    - tag1: tag1_read
+    - tag2: tag2_read
+    - tag3: tag3_read
+    - tag4: tag4_read
+  write:
+    - tag3: tag3_write
+    - tag4: tag4_write
+    - tag1: tag1_write
+    - tag2: tag2_write
+  

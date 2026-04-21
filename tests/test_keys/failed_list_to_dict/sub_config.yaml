@@ -1,0 +1,9 @@
+root:
+  (patch): test_keys/failed_list_to_dict/patch.yaml
+  inner1:
+    inner2:
+      inner3:
+        - item1: value1
+        - item2: value2
+    inner2_2:
+      key: value

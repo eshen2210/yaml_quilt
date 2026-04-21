@@ -1,0 +1,5 @@
+(patch): test_configs/failed_nested_sealed_config/patch_level1.yaml
+(sealed_file):
+(override_file): 
+key0: value
+key2: should_fail_inheritance

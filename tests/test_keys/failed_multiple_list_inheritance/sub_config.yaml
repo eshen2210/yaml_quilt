@@ -1,0 +1,3 @@
+(patch):
+  - test_keys/failed_multiple_list_inheritance/patch1.yaml
+  - test_keys/failed_multiple_list_inheritance/patch2.yaml

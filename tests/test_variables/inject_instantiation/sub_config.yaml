@@ -1,0 +1,17 @@
+(patch): <patch4>
+root:
+  dict:
+    (patch):
+      - <patch1>
+      - (path): <patch2>
+        (variables):
+          <var2>: value2
+  sequence:
+    - (patch):
+        (path): <patch1>
+        (variables):
+          <var1>: value1
+    - (patch): <patch2> 
+    - (patch): <patch3>
+
+

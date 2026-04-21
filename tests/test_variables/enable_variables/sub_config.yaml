@@ -1,0 +1,5 @@
+(patch):
+  - (path): test_variables/enable_variables/patch.yaml
+    (variables):
+      <enable_list>: true
+      <enable_dict>: true

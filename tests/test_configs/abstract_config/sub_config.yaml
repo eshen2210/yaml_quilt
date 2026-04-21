@@ -1,0 +1,19 @@
+(patch): test_configs/abstract_config/patch.yaml
+connection:
+  type: TCP/IP
+  address: sub.example.com
+(override) io:
+  information:
+    tag_count: 4
+  sequence:
+    - tag4
+    - tag3
+    - tag2
+    - tag1
+  read:
+    - tag3: tag3_read
+    - tag4: tag4_read
+  write:
+    - tag3: tag3_write
+    - tag4: tag4_write
+  

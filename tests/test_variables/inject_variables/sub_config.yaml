@@ -1,0 +1,6 @@
+root:
+  key1: var1
+  key2: var2
+  list:
+    - key3: var3
+    - key4: var4

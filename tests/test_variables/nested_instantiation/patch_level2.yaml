@@ -1,0 +1,8 @@
+(variables):
+  (abstract) var1:
+  var2: base_value_level2
+  (abstract) var3: private_value_level2
+root:
+  key1: var1
+  key2: var2
+  (private) key3: var3

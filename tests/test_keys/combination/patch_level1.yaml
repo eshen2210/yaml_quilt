@@ -1,0 +1,8 @@
+(patch): test_keys/combination/patch_level2.yaml
+set1:
+    (override) (private) key1: baseValueLevel1
+    key4: baseValueLevel1
+    (override) (abstract) key7: baseValueLevel1
+set2:
+    (sealed) (override) key1: baseValueLevel1
+    (override) (abstract) key2: baseValueLevel1

@@ -1,0 +1,10 @@
+io:
+  (sealed) sequence:
+    - tag1
+    - tag2
+  (sealed) publication:
+    - tag10: tag_10_pub
+    - tag11: tag_11_pub
+  (sealed) subscription:
+    tag12: tag_12_sub
+    tag13: tag_13_sub

@@ -1,0 +1,12 @@
+data1: 
+  key1: baseValue1
+  key2: baseValue2
+data2: 
+  key3: baseValue3
+  key4: baseValue4
+data3:
+  - key5: baseValue5
+    key6: baseValue6
+  - key7: baseValue7
+    key8: baseValue8
+  

@@ -1,0 +1,13 @@
+signals:
+- (patch):
+    (path): test_variables/failed_abstract_variables/patch.yaml
+    (variables):
+      (override) <name>: signal1
+      (override) <address>: address1
+      # (override) <data_type>: data_type1 # Not overriden despite base being abstract
+- (patch):
+    (path): test_variables/failed_abstract_variables/patch.yaml
+    (override) (variables):
+      <name>: signal2
+      <address>: address2
+      <data_type>: data_type2

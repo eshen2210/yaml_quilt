@@ -1,0 +1,13 @@
+site_name: yaml_quilt
+site_url: https://eshen2210.github.io/yaml_quilt/
+repo_url: https://github.com/eshen2210/yaml_quilt
+repo_name: eshen2210/yaml_quilt
+
+theme:
+  name: material
+
+nav:
+  - Home: index.md
+  - Variables: variables.md
+  - Inheritance: inheritance.md
+  - Exceptions: exceptions.md

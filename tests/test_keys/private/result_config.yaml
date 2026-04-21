@@ -1,0 +1,9 @@
+data1: sub_value1
+data5: sub_value5
+data6: sub_value6
+data2: 
+  key3: baseValue3
+  key4: baseValue4
+data4:
+  - key9: baseValue9
+  - key10: baseValue10

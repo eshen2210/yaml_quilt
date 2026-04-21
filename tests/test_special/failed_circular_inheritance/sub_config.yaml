@@ -1,0 +1,2 @@
+(patch): test_special/failed_circular_inheritance/patch_level1.yaml
+sub_key: sub_value

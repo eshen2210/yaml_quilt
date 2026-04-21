@@ -1,0 +1,20 @@
+root:
+  array1:
+    - (patch): test_keys/patches/dict_config.yaml
+    - (patch): test_keys/patches/list_config.yaml
+    - sub2
+    - - sub 3
+      - sub 4
+    - - sub 5
+      - - (patch): test_keys/patches/list_config.yaml
+  array2:
+    -
+      - sub3
+      - sub4
+      - (patch): test_keys/patches/dict_config.yaml
+    -
+      - data1: value1
+        data2: value2
+        data3: value3
+  array3:
+    
