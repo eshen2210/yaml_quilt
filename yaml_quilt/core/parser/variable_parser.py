@@ -113,7 +113,9 @@ def _process_dict(data: dict, variables: VariableMap, is_patch: bool, file_path:
     """Processes a dict for variable DFS replacement inplace.
        If None is returned, then pop non-root parent element."""
     if not _process_enable_in_dict(data, variables, file_path):
+        # (enable) if False, clear dict
         return
+    _process_enable_in_key(data, variables, file_path)
 
     for key in list(data.keys()):
         if key == DeclarationType.PATCH:
@@ -155,6 +157,37 @@ def _process_enable_in_dict(data: dict, variables: VariableMap, file_path: str) 
         return False
     data.pop(DeclarationType.ENABLE)
     return True
+
+
+def _process_enable_in_key(data: dict, variables: VariableMap, file_path: str) -> None:
+    """Apply (enable) semantics to a dict key. Deletes the key in the data if removed."""
+    for key in list(data.keys()):
+        if DeclarationType.ENABLE not in key or\
+           key == DeclarationType.ENABLE:  # Whole key is (enable) means dict-level enable
+            continue
+        
+        delimited_key = key.split(DeclarationType.ENABLE_DELIMITER)
+        if len(delimited_key) != 2:
+            file_context = f" File: '{file_path}'."
+            raise InvalidDeclarationException(
+                f"Key-level (enable) must contain exactly one delimiter '{DeclarationType.ENABLE_DELIMITER}'. "
+                f"Key '{key}' instead has value: {key}.{file_context}"
+            )
+    
+        enable_variables = delimited_key[0].replace(DeclarationType.ENABLE + " ", "")
+        if not enable_variables:
+            file_context = f" File: '{file_path}'."
+            raise InvalidDeclarationException(
+                f"Key-level (enable) must have a variable key before the delimiter '{DeclarationType.ENABLE_DELIMITER}'. "
+                f"Key '{key}' instead has value: {key}.{file_context}"
+            )
+    
+        if enable_variables not in variables:
+            data.pop(key)
+            return
+        else:
+            value = data.pop(key)
+            data[delimited_key[1]] = value
 
 
 def _process_carryover_variables(data: dict, key: str, variables: VariableMap) -> None:

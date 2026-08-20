@@ -25,3 +25,7 @@ root:
     - - (enable): <enable_list>
       - item1
       - item2
+  keys:
+    (enable) <enable_key> | enabled_key1: value1
+    (enable) <enable_key> | enabled_key2: value2
+    (enable) <missing_or_false> | disabled_key1: value3

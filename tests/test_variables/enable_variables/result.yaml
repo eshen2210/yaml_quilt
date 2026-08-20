@@ -10,3 +10,6 @@ root:
       enabled_key2: value2
     - - item1
       - item2
+  keys:
+    enabled_key1: value1
+    enabled_key2: value2

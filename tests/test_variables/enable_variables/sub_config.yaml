@@ -3,3 +3,5 @@
     (variables):
       <enable_list>: true
       <enable_dict>: true
+      <enable_key>: true
+      <not_enabled>: false

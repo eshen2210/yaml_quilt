@@ -159,7 +159,7 @@ config:
 
 ---
 
-## `(override)`, `(abstract)`, `(sealed)` on Variables
+## `(override)`, `(abstract)`, `(sealed)`
 
 These keywords modify the behavior of variables defined under `(variables)`.
 
@@ -272,6 +272,7 @@ The default value is parsed as a Python literal when possible (e.g., `2` becomes
   <enable_dict>: true
   <enable_list>: true
   <enable_list_item>: true
+  <enable_key>: true
 
 root:
   enabled_dict:
@@ -297,6 +298,10 @@ root:
     - (enable): <missing_or_false>
       disabled_keyA: valueA
       disabled_keyB: valueB
+  keys:
+    (enable) <enable_key> | enabled_key1: value1
+    (enable) <enable_key> | enabled_key2: value2
+    (enable) <missing_or_false> | disabled_key1: value3
 ```
 
 Renders to:
@@ -312,7 +317,13 @@ root:
   list_of_dicts:
     - enabled_key1: value1
       enabled_key2: value2
+  keys:
+    enabled_key1: value1
+    enabled_key2: value2
 ```
+
+Note that `(enable)`, if declared at a key level, requires the delimiter ` | ` seprating the final key string from the declaration and variable.
+Any string to the left of the delimiter ` | `, minutes the `(enable)` declaration is considered as the variable.
 
 ---
 

@@ -15,6 +15,7 @@ class DeclarationType():
     OPTIONAL = "(optional)"
     DEFAULT = "(default)"
     DEFAULT_DELIMITER = " | "
+    ENABLE_DELIMITER = " | "
     CARRYOVER = "(carryover)"
     GLOBAL = "(global)"
 
