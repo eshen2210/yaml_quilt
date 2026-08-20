@@ -174,19 +174,16 @@ def _process_enable_in_key(data: dict, variables: VariableMap, file_path: str) -
                 f"Key '{key}' instead has value: {key}.{file_context}"
             )
     
-        enable_variables = delimited_key[0].replace(DeclarationType.ENABLE + " ", "")
-        if not enable_variables:
+        enable_variable = delimited_key[0].replace(DeclarationType.ENABLE + " ", "")
+        if not enable_variable:
             file_context = f" File: '{file_path}'."
             raise InvalidDeclarationException(
-                f"Key-level (enable) must have a variable key before the delimiter '{DeclarationType.ENABLE_DELIMITER}'. "
+                f"Key-level (enable) must have only one variable key before the delimiter '{DeclarationType.ENABLE_DELIMITER}'. "
                 f"Key '{key}' instead has value: {key}.{file_context}"
             )
     
-        if enable_variables not in variables:
-            data.pop(key)
-            return
-        else:
-            value = data.pop(key)
+        value = data.pop(key)
+        if enable_variable in variables and variables[enable_variable][0] is True:
             data[delimited_key[1]] = value
 
 

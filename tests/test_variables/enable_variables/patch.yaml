@@ -29,3 +29,4 @@ root:
     (enable) <enable_key> | enabled_key1: value1
     (enable) <enable_key> | enabled_key2: value2
     (enable) <missing_or_false> | disabled_key1: value3
+    (enable) <not_enabled> | disabled_key2: value4
